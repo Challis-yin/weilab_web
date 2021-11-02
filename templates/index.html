@@ -33,6 +33,12 @@
 			height: auto;
     }
 }
+		imglogo {
+			float:left;
+			display:inline-block
+			height:200px;
+			margin:0 auto;
+}
 	</style>
 </head>
 
@@ -45,6 +51,7 @@
 			<div class="header">
 				<div class="container">
 					<nav class="navbar navbar-default">
+					<div class="teamgrids">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 							<span class="sr-only">Toggle navigation</span>
@@ -52,10 +59,11 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-							<h1><a href="/index">WeiLab</a></h1>
+							<a href="/index"><img src="../static/images/weilab_logo.png"  style="height: 70px;float: left; margin-right:20px"/></a>
 						</div>
 						<!--navbar-header-->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href="/home"  class="active">Home</a></li>
 								<li><a href="/publications">Publications</a></li>
@@ -79,6 +87,7 @@
 								-->
 								<li><a href="/contact" >Contact us</a></li>
 							</ul>
+						</div>
 						</div>
 					</nav>
 				</div>
