@@ -40,6 +40,13 @@ def ab_page():
 def g_page():
     return render_template("gallery.html")
 
+@app.route('/subgallery_party', methods=['GET', 'POST'])
+def sgp_page():
+    return render_template("subgallery_party.html")
+@app.route('/subgallery_dailylife', methods=['GET', 'POST'])
+def sgd_page():
+    return render_template("subgallery_dailylife.html")
+
 @app.route('/contact', methods=['GET', 'POST'])
 def c_page():
     return render_template("contact.html")

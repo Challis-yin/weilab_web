@@ -3613,5 +3613,8 @@ test{
     object-fit: scale-down;
 }
 
-
+.initImg2{
+    
+    height: 300px;
+}
 
