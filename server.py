@@ -43,6 +43,9 @@ def g_page():
 @app.route('/subgallery_party', methods=['GET', 'POST'])
 def sgp_page():
     return render_template("subgallery_party.html")
+@app.route('/Labseminar', methods=['GET', 'POST'])
+def lm_page():
+    return render_template("lab_seminar.html")
 @app.route('/subgallery_dailylife', methods=['GET', 'POST'])
 def sgd_page():
     return render_template("subgallery_dailylife.html")
