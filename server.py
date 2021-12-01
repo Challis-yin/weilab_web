@@ -49,6 +49,9 @@ def lm_page():
 @app.route('/subgallery_dailylife', methods=['GET', 'POST'])
 def sgd_page():
     return render_template("subgallery_dailylife.html")
+@app.route('/Group_photo', methods=['GET', 'POST'])    
+def sgddd_page():
+    return render_template("group_photo.html")    
 
 @app.route('/contact', methods=['GET', 'POST'])
 def c_page():
