@@ -64,7 +64,9 @@ def a_page():
 @app.route('/server', methods=['GET', 'POST'])
 def s_page():
     return render_template("server.html")
-
+@app.route('/si', methods=['GET', 'POST'])
+def si_page():
+    return render_template("si.html")
 if __name__ == "__main__":
     print("""
      __       __            __  __                __            __       
