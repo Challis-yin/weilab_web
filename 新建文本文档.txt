@@ -1,0 +1,11 @@
+# 根据同一目录下的以上文件构建镜像,目录为ycl，tag为test
+docker build -f Dockerfile -t test:flask
+# 创建容器，并选择我们刚刚创建的容器运行
+docker run -p 8080:8080 test:flask
+# 导出镜像到文件当中便于拷贝
+docker save test:flask >1.tar
+# 读入命令
+docker load <test.tar
+
+scp 1.tar root@149.129.89.106:/root
+weileyi1987@
